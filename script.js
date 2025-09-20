@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5002"; // backend server
+const API_URL = "https://orders.levelup-store.tn"; // backend server
 let token = localStorage.getItem("token");
 
 // Elements
