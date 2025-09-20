@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Orders Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Orders Management</h1>
+
+  <!-- Login Form -->
+  <div id="loginDiv">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p id="loginError" style="color:red;"></p>
+  </div>
+
+  <!-- Orders Form -->
+  <div id="ordersDiv" style="display:none;">
+    <form id="orderForm">
+      <input type="text" id="productName" placeholder="Product Name" required>
+      <input type="number" id="quantity" placeholder="Quantity" required>
+      <input type="text" id="clientName" placeholder="Client Name" required>
+      <input type="text" id="clientNumber" placeholder="Client Phone Number" required>
+      <input type="text" id="clientAddress" placeholder="Client Address" required>
+      <button type="submit">Add Order</button>
+    </form>
+
+    <h2>Orders List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Client Name</th>
+          <th>Phone</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody id="ordersTableBody"></tbody>
+    </table>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
